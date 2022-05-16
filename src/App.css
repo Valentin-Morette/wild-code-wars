@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "jose";
+  src: url(./assets/JosefinSans-VariableFont_wght.ttf);
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -6,14 +11,22 @@
 body{
   background-color: #292a2d;
   color : #a9a9b3;
-}
-
-button{
-  color : #a9a9b3;
+  font-family: "jose";
 }
 
 .imgcw{
-  width: 50px;
+  width: 30px;
+}
+
+h1{
+  text-align: center;
+}
+
+.all{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .cwcard, .cwcardglobal{
@@ -23,29 +36,44 @@ button{
   width: 200px;
 }
 
-.cwcard{
-  width: 200px;
-}
-
-.cwcardglobal{
-  width: 500px;
-}
-
 .cwbutton{
   background: transparent;
-  border: none;
+  border: none;  
+  color : #a9a9b3;
+  font-family: "jose";
+  font-size: 1rem;
 }
 
-.cwstats{
+.cwstats, .cwstatsAll{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  list-style-type : none;
+}
+
+.cwstatsAll{
+  gap:10px;
+  font-size: 1.5rem;
+}
+
+.statsName{
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.namelist{
+  gap:1rem;
 }
 
 .cwglobal{
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+}
+
+@media screen and (orientation: landscape){
+  .namelist{
+    display: grid;
+  }
 }

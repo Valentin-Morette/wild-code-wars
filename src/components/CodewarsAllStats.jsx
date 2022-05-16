@@ -1,15 +1,16 @@
 import codewars from ".././assets/codewars.svg";
 
-function CodewarsAllStats ({honor, username, name, leaderboardPosition, ranks}) {
+function CodewarsAllStats ({honor, username, name, leaderboardPosition, ranks, chal}) {
 
     return (
         <div>
-            <div className='cwstats'>
-                <p>{name === null || name === "" ? username : name}</p>
-                <p>Honor : {honor}</p>
-                <p>Position dans le leaderboard : {leaderboardPosition === null ? "Non disponible" : leaderboardPosition}</p>
-                <p>Rank : {ranks}</p>
-            </div>
+            <ul className='cwstatsAll'>
+                <li className="statsName">{name === null || name === "" ? username.toUpperCase() : name.toUpperCase()}</li>
+                <li>Rank : {ranks}</li>
+                <li>Honor : {honor}</li>
+                <li>Kata reussi : {chal}</li>
+                <li>Leaderboard : {leaderboardPosition === null ? "Non disponible" : leaderboardPosition+"ème"}</li>
+            </ul>
         </div>
     )
 }

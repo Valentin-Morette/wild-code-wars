@@ -1,10 +1,10 @@
-import CodewarsStats from "./CodewarsStats";
+import CodewarsName from "./CodewarsName";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const promoKrilin = ["QuentinSamuel", "Simon-Duc", "Birious", "Jsuiscoince", "nibor51", "Alexandra-Rdrgs", "loulou", "theoDep"];
 
-function CodewarsStatsList({modify}) {
+function CodewarsNameList({modify}) {
     const [honor, setHonor] = useState();
 
     function searchAllHonor(){
@@ -27,8 +27,10 @@ function CodewarsStatsList({modify}) {
     useEffect(searchAllHonor,[]);
 
     return (
-        honor && honor.map((x) => (<CodewarsStats modify={modify} honor={x.honor} username={x.username} name={x.name} ranks={x.ranks.overall.name} leaderboardPosition={x.leaderboardPosition}/>))
+        <div className="namelist">
+            {honor && honor.map((x) => (<CodewarsName modify={modify} honor={x.honor} username={x.username} name={x.name} ranks={x.ranks.overall.name} leaderboardPosition={x.leaderboardPosition} chal={x.codeChallenges.totalCompleted}/>))}
+        </div>
     );
 }
 
-export default CodewarsStatsList;
+export default CodewarsNameList;
