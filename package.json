@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Valentin-Morette.github.io/wild-code-wars",
   "name": "wild-code-wars",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "eslint": "^8.15.0",
+    "gh-pages": "^4.0.0",
     "pretier": "^0.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -18,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
