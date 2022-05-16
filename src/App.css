@@ -42,6 +42,7 @@ h1{
   color : #a9a9b3;
   font-family: "jose";
   font-size: 1rem;
+  cursor:pointer;
 }
 
 .cwstats, .cwstatsAll{
@@ -63,17 +64,41 @@ h1{
   text-decoration: underline;
 }
 
-.namelist{
-  gap:1rem;
-}
-
 .cwglobal{
   display: flex;
   justify-content: center;
+  margin: 0.5rem;
 }
 
-@media screen and (orientation: landscape){
+@media screen and (min-width : 768px){
   .namelist{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+  }
+
+  .imgcw{
+    width: 50px;
   }
 }
+
+@media screen and (min-width : 1024px){
+  .namelist{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5rem 2rem;
+  }
+
+  .imgcw{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width : 350px){
+  .cwstatsAll{
+    font-size: 1.2rem;
+  }
+}
+
+
+

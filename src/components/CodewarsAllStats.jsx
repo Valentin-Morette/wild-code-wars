@@ -1,5 +1,3 @@
-import codewars from ".././assets/codewars.svg";
-
 function CodewarsAllStats ({honor, username, name, leaderboardPosition, ranks, chal}) {
 
     return (

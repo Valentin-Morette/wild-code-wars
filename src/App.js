@@ -1,5 +1,5 @@
 import './App.css';
-import CodewarsStatsList from './components/CodewarsStatsList';
+import CodewarsNameList from './components/CodewarsNameList';
 import CodewarsAllStats from "./components/CodewarsAllStats";
 import { useState } from 'react';
 
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className='all'>  
       <h1>WILD CODE WARS</h1>
-      <CodewarsStatsList modify={modify}/>
+      <CodewarsNameList modify={modify}/>
       {display && <CodewarsAllStats honor={honor} name={name} username={username} leaderboardPosition={leaderboardPosition} ranks={ranks} chal={chal}/>}
     </div>
   );
