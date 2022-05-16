@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const promoKrilin = ["QuentinSamuel", "Simon-Duc", "Birious", "Jsuiscoince", "nibor51", "Alexandra-Rdrgs", "loulou", "theoDep"];
 
-function CodewarsStatsList() {
+function CodewarsStatsList({modify}) {
     const [honor, setHonor] = useState();
 
     function searchAllHonor(){
@@ -27,7 +27,7 @@ function CodewarsStatsList() {
     useEffect(searchAllHonor,[]);
 
     return (
-        honor && honor.map((x) => (<CodewarsStats honor={x.honor} username={x.username} name={x.name}/>))
+        honor && honor.map((x) => (<CodewarsStats modify={modify} honor={x.honor} username={x.username} name={x.name} ranks={x.ranks.overall.name} leaderboardPosition={x.leaderboardPosition}/>))
     );
 }
 

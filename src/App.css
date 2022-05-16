@@ -5,17 +5,35 @@
 
 body{
   background-color: #292a2d;
+  color : #a9a9b3;
+}
+
+button{
+  color : #a9a9b3;
 }
 
 .imgcw{
   width: 50px;
 }
 
-.cwcard{
+.cwcard, .cwcardglobal{
   display: flex;
   border: 2px solid #a9a9b3;
   border-radius: 5px;
   width: 200px;
+}
+
+.cwcard{
+  width: 200px;
+}
+
+.cwcardglobal{
+  width: 500px;
+}
+
+.cwbutton{
+  background: transparent;
+  border: none;
 }
 
 .cwstats{
@@ -30,9 +48,4 @@ body{
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-}
-
-a{
-  text-decoration: none;
-  color : #a9a9b3;
 }
