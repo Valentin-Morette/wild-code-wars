@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #292a2d;
+}
+
+.imgcw{
+  width: 50px;
+}
+
+.cwcard{
+  display: flex;
+  border: 2px solid #a9a9b3;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.cwstats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cwglobal{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+a{
+  text-decoration: none;
+  color : #a9a9b3;
+}
