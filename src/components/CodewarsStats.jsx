@@ -1,15 +1,15 @@
 import codewars from ".././assets/codewars.svg";
 
-function CodewarsStats ({honor}) {
+function CodewarsStats ({honor, username, name}) {
 
     return (
             <div className='cwglobal'>
-                <a href="https://www.codewars.com/users/Alexandra-Rdrgs" target="_blank" rel="noreferrer">
+                <a href={`https://www.codewars.com/users/${username}`}target="_blank" rel="noreferrer">
                     <div className='cwcard'>
                         <img className="imgcw" src={codewars} alt="codewars"></img>
                         <div className='cwstats'>
-                            <p>{honor.username}</p>
-                            <p>Honor : {honor.honor}</p>
+                            <p>{name === null || name === "" ? username : name}</p>
+                            <p>Honor : {honor}</p>
                         </div>
                     </div>
                 </a>
@@ -18,5 +18,3 @@ function CodewarsStats ({honor}) {
 }
 
 export default CodewarsStats;
-
-// QuentinSamuel Simon-Duc Birious Jsuiscoince nibor51 Alexandra-Rdrgs loulou theoDep
