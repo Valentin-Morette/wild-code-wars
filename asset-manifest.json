@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/wild-code-wars/static/css/main.b2c92fff.css",
-    "main.js": "/wild-code-wars/static/js/main.889f5070.js",
+    "main.css": "/wild-code-wars/static/css/main.5ec42a57.css",
+    "main.js": "/wild-code-wars/static/js/main.971d185a.js",
     "static/js/787.223e35a0.chunk.js": "/wild-code-wars/static/js/787.223e35a0.chunk.js",
     "static/media/JosefinSans-VariableFont_wght.ttf": "/wild-code-wars/static/media/JosefinSans-VariableFont_wght.762df0b3ada8d7e38f03.ttf",
     "static/media/codewars.svg": "/wild-code-wars/static/media/codewars.ae70542faad07e2ab23b27a1df187fa1.svg",
     "index.html": "/wild-code-wars/index.html",
-    "main.b2c92fff.css.map": "/wild-code-wars/static/css/main.b2c92fff.css.map",
-    "main.889f5070.js.map": "/wild-code-wars/static/js/main.889f5070.js.map",
+    "main.5ec42a57.css.map": "/wild-code-wars/static/css/main.5ec42a57.css.map",
+    "main.971d185a.js.map": "/wild-code-wars/static/js/main.971d185a.js.map",
     "787.223e35a0.chunk.js.map": "/wild-code-wars/static/js/787.223e35a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2c92fff.css",
-    "static/js/main.889f5070.js"
+    "static/css/main.5ec42a57.css",
+    "static/js/main.971d185a.js"
   ]
 }
