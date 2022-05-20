@@ -1,14 +1,14 @@
 import codewars from ".././assets/codewars.svg";
 
-function CodewarsName ({username, name, honor, modify, leaderboardPosition, ranks, chal}) {
+function CodewarsName ({modify, arrStats}) {
 
     return (
             <div className='cwglobal' >
-                <button className="cwbutton" onClick={() => modify(honor, name, username, leaderboardPosition, ranks, chal)}>
+                <button className="cwbutton" onClick={() => modify(arrStats)}>
                     <div className='cwcard'>
                         <img className="imgcw" src={codewars} alt="codewars"></img>
                         <div className='cwstats'>
-                            <p>{name === null || name === "" ? username : name}</p>
+                            <p>{arrStats.name === null || arrStats.name === "" ? arrStats.username : arrStats.name}</p>
                         </div>
                     </div>
                 </button>

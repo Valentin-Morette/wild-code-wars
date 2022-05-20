@@ -28,7 +28,7 @@ function CodewarsNameList({modify}) {
 
     return (
         <div className="namelist">
-            {honor && honor.map((x) => (<CodewarsName modify={modify} honor={x.honor} username={x.username} name={x.name} ranks={x.ranks.overall.name} leaderboardPosition={x.leaderboardPosition} chal={x.codeChallenges.totalCompleted}/>))}
+            {honor && honor.map((x) => (<CodewarsName arrStats={x} modify={modify}/>))}
         </div>
     );
 }

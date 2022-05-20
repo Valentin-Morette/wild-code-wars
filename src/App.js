@@ -5,28 +5,18 @@ import { useState } from 'react';
 
 function App() {
   const [display, setDisplay] = useState(false);
-  const [honor, sethonor] = useState("");
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
-  const [leaderboardPosition, setLeaderboardPosition] = useState("");
-  const [ranks, setRanks] = useState("");
-  const [chal, setChal] = useState("");
+  const [arrStats, setArrStats] = useState([]);
 
-  const modify = (honor, name, username, leaderboardPosition, ranks, chal) => {
+  const modify = (arrStats) => {
     setDisplay(true);
-    sethonor(honor);
-    setUsername(username);
-    setName(name);
-    setLeaderboardPosition(leaderboardPosition);
-    setRanks(ranks);
-    setChal(chal);
+    setArrStats(arrStats);
   }
 
   return (
     <div className='all'>  
       <h1>WILD CODE WARS</h1>
       <CodewarsNameList modify={modify}/>
-      {display && <CodewarsAllStats honor={honor} name={name} username={username} leaderboardPosition={leaderboardPosition} ranks={ranks} chal={chal}/>}
+      {display && <CodewarsAllStats arrStats={arrStats}/>}
     </div>
   );
 }
