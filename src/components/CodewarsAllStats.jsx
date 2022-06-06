@@ -15,7 +15,7 @@ function CodewarsAllStats ({arrStats}) {
                 <li>Rank : {arrStats.ranks.overall.name}</li>
                 <li>Kata reussi : {arrStats.codeChallenges.totalCompleted}</li>
                 <li>Score total : {arrStats.honor}</li>   
-                {objectTitle().map(x => <li>Score {x[0]} : {x[1].score}</li>)}
+                {objectTitle().filter(y => y[1].score >= 10).map(x => <li>Score {x[0]} : {x[1].score}</li>)}
                 <li>Leaderboard : {arrStats.leaderboardPosition === null ? "Non disponible" : arrStats.leaderboardPosition+"ème"}</li>
             </ul>
             <button></button>
