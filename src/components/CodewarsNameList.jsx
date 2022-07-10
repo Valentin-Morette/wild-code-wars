@@ -36,9 +36,14 @@ function CodewarsNameList({ modify }) {
   useEffect(searchAllHonor, []);
 
   return (
-    <div className="namelist">
-      {honor && honor.map((x) => <CodewarsName arrStats={x} modify={modify} />)}
-    </div>
+    <ul className="namelist">
+      {honor &&
+        honor.map((x) => (
+          <li key={x.id} className="cwglobal">
+            <CodewarsName arrStats={x} modify={modify} />
+          </li>
+        ))}
+    </ul>
   );
 }
 

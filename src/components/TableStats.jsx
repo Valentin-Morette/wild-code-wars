@@ -20,7 +20,7 @@ function TableStats({ arrStats }) {
   return objectTitle()
     .sort(compare)
     .map((x) => (
-      <li>
+      <li key={x[0]}>
         {Object.keys(arrStats.ranks.languages).length > 1 && '- '}
         {capitalize(x[0])} : {x[1].score}
       </li>
