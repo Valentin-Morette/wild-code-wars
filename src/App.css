@@ -1,111 +1,117 @@
 @font-face {
-  font-family: "jose";
+  font-family: 'jose';
   src: url(./assets/JosefinSans-VariableFont_wght.ttf);
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   background-color: #292a2d;
-  color : #a9a9b3;
-  font-family: "jose";
+  color: #a9a9b3;
+  font-family: 'jose';
 }
 
-.imgcw{
-  width: 30px;
+.imgcw {
+  width: 25px;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-.all{
+.all {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.cwcard, .cwcardglobal{
+.cwcard,
+.cwcardglobal {
   display: flex;
   border: 2px solid #a9a9b3;
   border-radius: 5px;
   width: 200px;
 }
 
-.cwbutton{
+.cwbutton {
   background: transparent;
-  border: none;  
-  color : #a9a9b3;
-  font-family: "jose";
+  border: none;
+  color: #a9a9b3;
+  font-family: 'jose';
   font-size: 1rem;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.cwstats, .cwstatsAll{
+.cwstats,
+.cwstatsAll {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  list-style-type : none;
+  list-style-type: none;
 }
 
-.cwstatsAll{
-  gap:10px;
+.cwScores {
+  align-items: center;
+  list-style-type: none;
+}
+
+.cwstatsAll {
+  gap: 10px;
   font-size: 1.5rem;
 }
 
-.statsName{
+.statsName {
   margin-bottom: 2rem;
   text-decoration: underline;
 }
 
-.cwglobal{
+.cwglobal {
   display: flex;
   justify-content: center;
   margin: 0.5rem;
 }
 
-@media screen and (min-width : 768px){
-  .namelist{
+@media screen and (min-width: 768px) {
+  .namelist {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:2rem;
+    gap: 2rem;
   }
 
-  .imgcw{
+  .imgcw {
     width: 50px;
   }
 }
 
-@media screen and (min-width : 1024px){
-  .namelist{
+@media screen and (min-width: 1024px) {
+  .namelist {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:5rem 2rem;
+    gap: 5rem 2rem;
   }
 
-  .imgcw{
+  .imgcw {
     width: 50px;
   }
 }
 
-@media screen and (max-width : 350px){
-  .cwstatsAll{
+@media screen and (max-width: 350px) {
+  .cwstatsAll {
     font-size: 1.2rem;
   }
 }
 
-@media screen and (max-height : 700px){
-  .statsName{
+@media screen and (max-height: 700px) {
+  .statsName {
     margin-bottom: 0.5rem;
   }
-  li{
+  li {
     font-size: 18px;
   }
 }
-

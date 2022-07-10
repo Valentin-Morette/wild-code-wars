@@ -1,7 +1,8 @@
 import './App.css';
 import CodewarsNameList from './components/CodewarsNameList';
-import CodewarsAllStats from "./components/CodewarsAllStats";
+import CodewarsAllStats from './components/CodewarsAllStats';
 import { useState } from 'react';
+import { AnnexeContextProvider } from './context/AnnexeContext';
 
 function App() {
   const [display, setDisplay] = useState(false);
@@ -10,14 +11,16 @@ function App() {
   const modify = (arrStats) => {
     setDisplay(true);
     setArrStats(arrStats);
-  }
+  };
 
   return (
-    <div className='all'>  
-      <h1>WILD CODE WARS</h1>
-      <CodewarsNameList modify={modify}/>
-      {display && <CodewarsAllStats arrStats={arrStats}/>}
-    </div>
+    <AnnexeContextProvider>
+      <div className="all">
+        <h1>WILD CODE WARS</h1>
+        <CodewarsNameList modify={modify} />
+        {display && <CodewarsAllStats arrStats={arrStats} />}
+      </div>
+    </AnnexeContextProvider>
   );
 }
 
