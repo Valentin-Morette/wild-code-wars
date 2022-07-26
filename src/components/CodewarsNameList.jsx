@@ -1,17 +1,17 @@
-import CodewarsName from './CodewarsName';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import CodewarsName from "./CodewarsName";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const promoKrilin = [
-  'QuentinSamuel',
-  'Simon-Duc',
-  'Birious',
-  'Jsuiscoince',
-  'nibor51',
-  'Alexandra-Rdrgs',
-  'loulou',
-  'theoDep',
-  'rocambille',
+  "QuentinSamuel",
+  "Simon-Duc",
+  "Birious",
+  "Jsuiscoince",
+  "nibor51",
+  "Alexandra-Rdrgs",
+  "Louis0512",
+  "theoDep",
+  "rocambille",
 ];
 
 function CodewarsNameList({ modify }) {
