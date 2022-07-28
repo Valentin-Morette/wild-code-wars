@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'jose';
+  font-family: "jose";
   src: url(./assets/JosefinSans-VariableFont_wght.ttf);
 }
 
@@ -11,7 +11,7 @@
 body {
   background-color: #292a2d;
   color: #a9a9b3;
-  font-family: 'jose';
+  font-family: "jose";
 }
 
 .imgcw {
@@ -41,7 +41,7 @@ h1 {
   background: transparent;
   border: none;
   color: #a9a9b3;
-  font-family: 'jose';
+  font-family: "jose";
   font-size: 1rem;
   cursor: pointer;
 }
@@ -62,7 +62,7 @@ h1 {
 }
 
 .cwstatsAll {
-  gap: 10px;
+  gap: 6px;
   font-size: 1.5rem;
 }
 
