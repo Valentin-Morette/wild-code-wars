@@ -1,8 +1,8 @@
-import './App.css';
-import CodewarsNameList from './components/CodewarsNameList';
-import CodewarsAllStats from './components/CodewarsAllStats';
-import { useState } from 'react';
-import { AnnexeContextProvider } from './context/AnnexeContext';
+import "./App.css";
+import CodewarsNameList from "./components/CodewarsNameList";
+import CodewarsAllStats from "./components/CodewarsAllStats";
+import { useState } from "react";
+import { AnnexeContextProvider } from "./context/AnnexeContext";
 
 function App() {
   const [display, setDisplay] = useState(false);
